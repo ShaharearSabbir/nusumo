@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08070d">
+<title>Nusumo — Admin dashboard</title>
+<meta name="description" content="Nusumo admin: revenue, community and content at a glance.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/admin/tokens.css">
+<link rel="stylesheet" href="assets/css/admin/shell.css">
+<link rel="stylesheet" href="assets/css/admin/dashboard.css">
+<link rel="stylesheet" href="assets/css/admin/responsive.css">
+</head>
+<body class="admin" data-page="admin">
+<a class="a-skip" href="#aMain">Skip to dashboard</a>
+
+<div class="a-shell">
+  <aside class="a-side" id="aSide" aria-label="Admin"></aside>
+  <div class="a-scrim" data-action="close-drawer" hidden></div>
+
+  <div class="a-main">
+    <header class="a-top" id="aTop"></header>
+    <main class="a-main__body" id="aMain">
+      <div class="a-page" id="aPage"></div>
+    </main>
+  </div>
+</div>
+
+<nav class="a-tabbar" id="aTabbar" aria-label="Admin sections"></nav>
+
+<div class="a-palette" id="aPalette" hidden></div>
+<div class="a-pop" id="aPop" hidden></div>
+<div class="a-sheet-root" id="aSheetRoot"></div>
+<div class="a-toast-root" id="aToastRoot" aria-live="polite"></div>
+
+<script src="assets/js/admin-data.js"></script>
+<script src="assets/js/admin/charts.js"></script>
+<script src="assets/js/admin/shell.js"></script>
+<script src="assets/js/admin/pages/dashboard.js"></script>
+</body>
+</html>
